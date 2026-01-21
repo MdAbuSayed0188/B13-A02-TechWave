@@ -123,7 +123,42 @@ nav{
     border-radius: 20px;
 }
 
+/* about-section */
+.about-section{
+    background-color: #1A0B2E;
+    height: 647px;
+    padding: 50px;
+}
 
+.about-podcast,
+.banner-content,
+.h-description{
+    color: white;
+}
+
+.about-titel,
+.about-description{
+    text-align: center;
+}
+.about-titel{
+    font-size: 48px;
+    padding-bottom: 20px;
+}
+
+.about-grad{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    height: 95px;
+    padding: 200px;
+}
+
+.h-titel{
+    color: #00FF88;
+    font-size: 48px;
+}
 
 
 @media screen and (max-width: 576px) {
@@ -170,6 +205,12 @@ nav{
     .about-section {
         height: auto;
         padding: 40px 20px;
+    }
+
+    .about-grad {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 40px 0;
+        gap: 20px;
     }
 }
 
