@@ -160,6 +160,87 @@ nav{
     font-size: 48px;
 }
 
+/* choose-techwave */
+
+.choose-containar>*{
+    background-color: #230E3D;
+}
+
+.choose-titel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;
+    font-size: 48px;
+}
+
+.choose-contend{
+    padding: 100px;
+    color: white;
+    
+}
+
+.choose-h3{
+    font-size: 24px;
+    font-size: bold;
+    
+}
+
+.choose-description{
+    font-size: 16px;
+}
+
+.zap-fast{
+    width: 60px;
+    height: 60px;
+}
+
+
+#choose-headphone{
+    grid-area: headphone;
+    padding: 40px 40px;
+    background-color: #351165;
+    border-radius: 70px;
+}
+
+#choose-device{
+    grid-area: device;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 50px;
+}
+
+#choose-location{
+    grid-area: location;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 50px;
+}
+
+#choose-zap{
+    grid-area: zap;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 50px;
+}
+
+#choose-resourece{
+    grid-area: resourece;
+    padding: 40px;
+    background-color: #351165;
+    border-radius: 50px;
+}
+
+.choose-contend{
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+        "headphone  device      device"
+        "headphone  location    location"
+        "zap        zap         resourece"
+}
+
 
 @media screen and (max-width: 576px) {
     nav.navbar {
@@ -211,6 +292,16 @@ nav{
         grid-template-columns: repeat(2, 1fr);
         padding: 40px 0;
         gap: 20px;
+    }
+
+    .choose-contend {
+        padding: 40px 20px;
+        grid-template-areas:
+            "headphone"
+            "device"
+            "location"
+            "zap"
+            "resourece";
     }
 }
 
