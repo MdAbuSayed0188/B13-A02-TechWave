@@ -330,6 +330,44 @@ nav{
     height: 30px;
 }
 
+/* footer section */
+.footer-section{
+    background: url(./assets/footer-bg.png);
+    height: 412px;
+}
+
+.footer-titel{
+    text-align: center;
+    font-size: 48px;
+    padding-top: 140px;
+    color: white;
+}
+
+.footer-containar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icon{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.footer-description{
+    margin-left: 10px;
+}
+
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
 
 @media screen and (max-width: 576px) {
     nav.navbar {
@@ -392,6 +430,7 @@ nav{
             "zap"
             "resourece";
     }
+    
 
     .featured-section {
         height: auto;
@@ -424,6 +463,18 @@ nav{
     .host-icon{
         text-align: center;
         justify-content: center;
+    }
+
+    .footer-section {
+        height: auto;
+        padding-bottom: 40px;
+        background: none;
+        background-color: #1A0B2E;
+    }
+
+    .footer-containar {
+        /* flex-direction: column; */
+        gap: 10px;
     }
 }
 
