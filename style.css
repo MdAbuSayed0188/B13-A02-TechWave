@@ -3,8 +3,7 @@
     padding: 0px;
 }
 body{
-    width: 100%;
-    /* height: 100%; */
+    max-width: 1600px;
 }
 .display-flex{
     display: flex;
@@ -67,7 +66,6 @@ nav{
 /* benner */
 .banner{
     background-image: url(./assets/hero-bg.png);
-    background-size: auto;
     height: 760px;
     text-align: center;
     padding-top: 50px;
@@ -76,12 +74,13 @@ nav{
 
 
 .hero-position{
+    width: 100%;
     position: relative;
     text-align: center;
     justify-content: center;
     /* margin-left: 0px; */
     margin-top: 50px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
 .microphon-banner{
@@ -241,6 +240,96 @@ nav{
         "zap        zap         resourece"
 }
 
+/* featuced-section */
+.featured-section{
+    background-color: #1A0B2E;
+    height: 539px;
+    padding: 100px;
+}
+
+.featured-titel{
+    text-align: center;
+    font-size: 48px;
+    padding: 20px;
+    color: white;
+}
+
+.featured-containar{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 440px;
+    padding: 20px;
+}
+
+.box-description{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.box-img{
+    display: flex;
+    gap: 10px;
+    color: #00FF88;
+}
+
+/* host-section */
+.host-section{
+    background-color: #1A0B2E;
+    height: 379px;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+}
+
+.host-titel{
+    color: white;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.host-containar{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 183px;
+    /* padding: 60px; */
+    /* gap: 20px; */
+}
+
+.host-img{
+    margin-right: 20px;
+}
+
+.content-titel{
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+
+.host-description{
+    
+    font-size: 16px;
+    gap: 20px;
+}
+
+.host-icon{
+    padding-top: 20px;
+    gap: 20px;
+    display: flex;
+
+}
+
+.host-icon-item{
+    width: 30px;
+    height: 30px;
+}
+
 
 @media screen and (max-width: 576px) {
     nav.navbar {
@@ -302,6 +391,39 @@ nav{
             "location"
             "zap"
             "resourece";
+    }
+
+    .featured-section {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .featured-containar {
+        flex-direction: column;
+        gap: 30px;
+        height: auto;
+    }
+
+    .host-section {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .host-containar {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 0 20px;
+    }
+
+    .host-img {
+        margin: 0 0 20px 0;
+        width: 150px;
+    }
+
+    .host-icon{
+        text-align: center;
+        justify-content: center;
     }
 }
 
